@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>شهاب | السياحة والسفر إلى روسيا — موسكو وسانت بطرسبرغ</title>
+<meta name="description" content="شهاب لتنظيم رحلات السياحة والسفر إلى روسيا: تأشيرات سياحية، حجز فنادق في موسكو وسانت بطرسبرغ، استقبال وتوصيل من وإلى المطار، سيارات وسائقين، مرشدون سياحيون، وبرامج سياحية مصممة حسب رغبتك.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@500;600;700&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============================================================
+     NAVBAR
+     ============================================================ -->
+<header class="navbar" id="navbar">
+  <div class="navbar-inner container">
+
+    <!--
+      ملاحظة أبعاد: الشعار الأبيض (IMG_20260531_112105_748.png) مربّع 1:1.
+      الشعار الأحمر (ChatGPT_Image_Sep_30...png) عريض تقريبًا 1.96:1 (يحتوي على
+      الكلمة "Shehab Moscow" أسفل الرمز). لهذا السبب لا يُستخدم نفس width/height
+      للاثنين — كل صورة تحافظ على نسبتها الأصلية عبر height ثابت و width:auto
+      (انظر .navbar-logo-img في style.css).
+    -->
+    <a href="#hero" class="navbar-logo" aria-label="شهاب - الصفحة الرئيسية">
+      <span class="navbar-logo-swap">
+        <img src="assets/img/IMG_20260531_112105_748.png" alt="شهاب" width="210" height="210" class="navbar-logo-img navbar-logo-img--white">
+        <img src="assets/img/ChatGPT Image Sep 30, 2026, 08_17_32 PM.png" alt="شهاب موسكو" width="110" height="56" class="navbar-logo-img navbar-logo-img--red">
+      </span>
+    </a>
+
+    <nav class="navbar-links" id="navbarLinks">
+      <a href="#about" class="nav-link">من نحن</a>
+      <a href="#destinations" class="nav-link">الوجهات</a>
+      <a href="#hotels" class="nav-link">الفنادق</a>
+      <a href="#transport" class="nav-link">النقل</a>
+      <a href="#packages" class="nav-link">الباقات</a>
+      <a href="#faq" class="nav-link">الأسئلة الشائعة</a>
+    </nav>
+
+    <div class="navbar-actions">
+      <button class="hamburger" id="hamburgerBtn" aria-label="فتح القائمة" aria-expanded="false" aria-controls="navbarLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+  </div>
+</header>
+
+<!-- ============================================================
+     HERO SECTION
+     ============================================================ -->
+<section class="hero" id="hero">
+
+  <div class="hero-media">
+    <!--
+      PLACEHOLDER: الفيديو الحالي يشير لملف باسم طويل يحتوي مسافات وأقواس، وهذا قد يسبب مشاكل
+      على بعض الاستضافات. يفضّل لاحقًا إعادة تسميته لاسم بسيط مثل moscow-hero.mp4 بدون مسافات.
+      كما أن "poster" يجب أن يكون صورة وليس ملف فيديو — أزلته مؤقتًا لعدم وجود صورة poster فعلية.
+      أخبرني باسم ملف صورة poster إن وُجد وسأضيفه.
+    -->
+    <video
+      class="hero-video"
+      autoplay
+      muted
+      loop
+      playsinline
+      preload="none"
+      id="heroVideo">
+      <source src="assets/video/VideoEditor_٢٠٢٦٠٩٢٩_١٢٣٤٤١_١_١_١.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay"></div>
+  </div>
+
+  <div class="hero-content container">
+    <h1 class="hero-title">اكتشف روسيا<span>...</span> بطريقة مختلفة</h1>
+    <p class="hero-subtitle">من موسكو إلى سانت بطرسبرغ، ننظّم لك رحلتك خطوة بخطوة — الإقامة، التنقل، والتجارب التي تستحق وقتك.</p>
+    <div class="hero-actions">
+      <a href="#destinations" class="btn btn-primary">استكشف وجهات روسيا</a>
+    </div>
+  </div>
+
+  <div class="hero-scroll-hint" aria-hidden="true"><span></span></div>
+</section>
+
+<!-- ============================================================
+     من نحن — نص المؤسس، موزّع بصريًا بدل فقرة طويلة واحدة
+     ============================================================ -->
+<section class="about" id="about">
+  <div class="container about-grid">
+
+    <div class="about-lead">
+      <div class="intro-tag">من نحن</div>
+      <h2 class="section-title section-title--display">رحلتك إلى روسيا<br>تبدأ من هنا</h2>
+      <p class="intro-text">
+        شهاب موسكو شركة متخصصة في تنظيم وتنسيق الرحلات السياحية إلى روسيا، ومقرها في موسكو.
+        نعمل على تقديم تجربة سفر متكاملة للزوار العرب، من لحظة الوصول وحتى نهاية الرحلة.
+      </p>
+      <p class="about-tagline">شهاب موسكو — روسيا أقرب مما تتخيل</p>
+    </div>
+
+    <div class="about-details">
+
+      <div class="about-block">
+        <h3 class="about-block-title">خدماتنا</h3>
+        <ul class="about-tags">
+          <li>حجوزات الفنادق</li>
+          <li>الاستقبال والتوديع من وإلى المطار</li>
+          <li>المواصلات الخاصة</li>
+          <li>الجولات السياحية</li>
+          <li>حجز الفعاليات والتذاكر</li>
+          <li>الشرائح الروسية</li>
+          <li>الدعم والمتابعة طوال الإقامة</li>
+        </ul>
+      </div>
+
+      <div class="about-block">
+        <h3 class="about-block-title">برامج تناسب احتياجك</h3>
+        <p class="intro-text">
+          نؤمن بأن الرحلة المميزة تبدأ من التخطيط الجيد، لذلك نحرص على تصميم برامج سياحية تناسب
+          احتياجات كل عميل:
+        </p>
+        <ul class="about-tags">
+          <li>رحلة عائلية</li>
+          <li>رحلة شهر عسل</li>
+          <li>رحلة خاصة</li>
+          <li>رحلة سياحية متكاملة</li>
+        </ul>
+      </div>
+
+      <p class="intro-text">
+        ومن خلال خبرتنا ومعرفتنا بوجهات روسيا، نعمل على توفير خيارات متنوعة من الفنادق والأنشطة
+        والخدمات، مع اهتمامنا بأدق التفاصيل لضمان الراحة، الخصوصية، وسهولة السفر.
+      </p>
+
+      <p class="about-quote">في شهاب موسكو، لا نقدم لك مجرد رحلة… بل نرتب لك تجربة متكاملة في روسيا.</p>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     لماذا روسيا مع شهاب — (القسم كان بعنوان "لماذا شهاب موسكو"، أعيد وضعه هنا
+     وأعيد صياغته ليكون عامًا عن روسيا بدل موسكو فقط)
+     ============================================================ -->
+<section class="why" id="why">
+  <div class="container why-grid">
+    <div class="why-text">
+      <div class="intro-tag">لماذا معنا</div>
+      <h2 class="section-title section-title--display">تنظيم يريحك<br>من التفاصيل</h2>
+      <p class="intro-text">
+        رحلتك إلى روسيا تحتوي على تفاصيل كثيرة: تأشيرة، إقامة، تنقلات، أنشطة، وتواصل مستمر.
+        شهاب تتولى تنسيق هذه الخدمات معًا، وتبقيك على اطلاع في كل خطوة عبر واتساب.
+      </p>
+    </div>
+    <ul class="why-list">
+      <li>تنظيم شامل لتفاصيل الرحلة من البداية حتى النهاية</li>
+      <li>تواصل سهل ومباشر عبر واتساب طوال رحلتك</li>
+      <li>تنسيق خدمات السفر المختلفة في مكان واحد</li>
+      <li>مساعدة عملية في اتخاذ القرارات المتعلقة برحلتك</li>
+      <li>خيارات متنوعة للنقل والأنشطة والإقامة تناسب احتياجاتك</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============================================================
+     الخدمات — قسم Editorial: عنوان جانبي + قائمة صفوف تفاعلية
+     ============================================================ -->
+<section class="services" id="services">
+  <div class="container services-layout">
+
+    <div class="services-heading">
+      <div class="intro-tag">خدماتنا</div>
+      <h2 class="section-title section-title--display">كل ما تحتاجه<br>لرحلة منظمة</h2>
+      <p class="intro-text">من التأشيرة وحتى آخر يوم في رحلتك، نجمع لك خدمات السفر في مكان واحد.</p>
+    </div>
+
+    <ul class="services-rows">
+
+      <li class="service-row">
+        <span class="service-row-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"/><circle cx="12" cy="10" r="3"/><path d="M9 17c0-1.7 1.3-3 3-3s3 1.3 3 3"/></svg>
+        </span>
+        <span class="service-row-text">
+          <span class="service-row-title">التأشيرات السياحية</span>
+          <span class="service-row-desc">نساعدك في ترتيب متطلبات التأشيرة السياحية قبل سفرك إلى روسيا.</span>
+        </span>
+        <span class="service-row-arrow" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 5l-7 7 7 7"/></svg>
+        </span>
+      </li>
+
+      <li class="service-row">
+        <span class="service-row-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V9l9-6 9 6v12"/><path d="M9 21v-8h6v8"/></svg>
+        </span>
+        <span class="service-row-text">
+          <span class="service-row-title">حجز الفنادق والشقق</span>
+          <span class="service-row-desc">نرتب لك خيار الإقامة المناسب سواء فندق أو شقة، بما يتوافق مع احتياجات رحلتك.</span>
+        </span>
+        <span class="service-row-arrow" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 5l-7 7 7 7"/></svg>
+        </span>
+      </li>
+
+      <li class="service-row">
+        <span class="service-row-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 22l3-3m0 0l6-15 6 15m-12 0h12m-9-6h6"/></svg>
+        </span>
+        <span class="service-row-text">
+          <span class="service-row-title">استقبال وتوديع</span>
+          <span class="service-row-desc">استقبال وتوصيل من وإلى المطار، ليبدأ إحساسك بالراحة من لحظة الوصول.</span>
+        </span>
+        <span class="service-row-arrow" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 5l-7 7 7 7"/></svg>
+        </span>
+      </li>
+
+      <li class="service-row">
+        <span class="service-row-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17h14M5 17a2 2 0 01-2-2v-2l2-5h14l2 5v2a2 2 0 01-2 2M5 17v2a1 1 0 001 1h1a1 1 0 001-1v-2m8 0v2a1 1 0 001 1h1a1 1 0 001-1v-2"/></svg>
+        </span>
+        <span class="service-row-text">
+          <span class="service-row-title">السيارات والسائقين</span>
+          <span class="service-row-desc">تنقلات مريحة أثناء رحلتك بسيارات مختارة وسائقين موثوقين.</span>
+        </span>
+        <span class="service-row-arrow" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 5l-7 7 7 7"/></svg>
+        </span>
+      </li>
+
+      <li class="service-row">
+        <span class="service-row-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M16.2 7.8l-2 5-5 2 2-5z"/></svg>
+        </span>
+        <span class="service-row-text">
+          <span class="service-row-title">المرشدون السياحيون</span>
+          <span class="service-row-desc">مرشدون يرافقونك لاكتشاف وجهتك عن قرب وفهم تفاصيلها.</span>
+        </span>
+        <span class="service-row-arrow" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 5l-7 7 7 7"/></svg>
+        </span>
+      </li>
+
+      <li class="service-row">
+        <span class="service-row-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v3m0 12v3M4.2 4.2l2.1 2.1m11.4 11.4l2.1 2.1M3 12h3m12 0h3M4.2 19.8l2.1-2.1m11.4-11.4l2.1-2.1"/></svg>
+        </span>
+        <span class="service-row-text">
+          <span class="service-row-title">الفعاليات</span>
+          <span class="service-row-desc">وصول إلى فعاليات وتجارب مميزة أثناء إقامتك في روسيا.</span>
+        </span>
+        <span class="service-row-arrow" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 5l-7 7 7 7"/></svg>
+        </span>
+      </li>
+
+      <li class="service-row">
+        <span class="service-row-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3l1 6-1 6 6-2 6 2-1-6 1-6-6 2z"/><path d="M12 15v6"/></svg>
+        </span>
+        <span class="service-row-text">
+          <span class="service-row-title">البرامج السياحية</span>
+          <span class="service-row-desc">برامج رحلات منسقة تجمع بين الأنشطة والإقامة والنقل بشكل متكامل.</span>
+        </span>
+        <span class="service-row-arrow" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 5l-7 7 7 7"/></svg>
+        </span>
+      </li>
+
+    </ul>
+  </div>
+</section>
+
+<!-- ============================================================
+     الوجهات — موسكو وسانت بطرسبرغ (قابل للتوسّع لاحقًا بمدن إضافية بدون
+     إعادة بناء القسم: فقط أضف عنصر destination-card جديد)
+     ============================================================ -->
+<section class="destinations" id="destinations">
+  <div class="container">
+    <div class="section-head">
+      <div class="intro-tag">الوجهات</div>
+      <h2 class="section-title section-title--display">إلى أين تريد<br>أن تذهب؟</h2>
+      <p class="intro-text">نبدأ حاليًا بمدينتين رئيسيتين، مع إمكانية إضافة وجهات أخرى في روسيا لاحقًا.</p>
+    </div>
+
+    <div class="destinations-grid">
+
+      <a href="#hotels" class="destination-card">
+        <img src="assets/img/moscow.jpg" alt="موسكو" loading="lazy">
+        <span class="destination-card-info">
+          <span class="destination-card-city">موسكو</span>
+          <span class="destination-card-desc">العاصمة التاريخية — الميدان الأحمر، الكرملين، ومزيج من التراث والحياة العصرية.</span>
+        </span>
+      </a>
+
+      <!--
+        PLACEHOLDER: لا توجد لدي صورة فعلية لسانت بطرسبرغ ضمن الصور المرسلة حتى الآن.
+        استخدمت مؤقتًا مسارًا باسم واضح — أرسل لي اسم الصورة الفعلي في assets/img لإضافتها.
+      -->
+      <a href="#hotels" class="destination-card">
+        <img src="assets/img/sant.jpg" alt="سانت بطرسبرغ" loading="lazy">
+        <span class="destination-card-info">
+          <span class="destination-card-city">سانت بطرسبرغ</span>
+          <span class="destination-card-desc">عاصمة روسيا الثقافية — الإرميتاج، القصور التاريخية، وواجهة بحرية مميزة.</span>
+        </span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     الأنشطة — Slider / Carousel سينمائي (صورة رئيسية + أطراف الجانبين)
+     ملاحظة مهمة: الصور هنا عناصر <img> عادية داخل حاوية Scroll أفقي بـCSS
+     scroll-snap. هذا يعني أن الـSlider يعمل (تصفّح يدوي بالسحب/التمرير) حتى
+     لو تعطّل JavaScript بالكامل — الأوتوبلاي والأسهم والمؤشر فقط تحسينات
+     يضيفها JavaScript فوق هذا الأساس.
+     ============================================================ -->
+<section class="activities" id="activities">
+  <div class="container">
+    <div class="section-head">
+      <div class="intro-tag">تجارب في موسكو</div>
+      <h2 class="section-title section-title--display">أنشطة تستحق أن<br>تكون جزءًا من رحلتك</h2>
+    </div>
+  </div>
+
+  <div class="activities-slider" id="activitiesSlider">
+
+    <button class="slider-arrow slider-arrow--prev" id="sliderPrev" aria-label="النشاط السابق">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg>
+    </button>
+
+    <div class="activities-track" id="activitiesTrack">
+
+      <div class="activity-slide"><img src="assets/img/02_01_hasky.png" alt="الهاسكي" loading="lazy"><span class="activity-slide-caption">الهاسكي</span></div>
+      <div class="activity-slide"><img src="assets/img/02_02_deer-park_1.png" alt="حديقة الغزلان" loading="lazy"><span class="activity-slide-caption">حديقة الغزلان</span></div>
+      <div class="activity-slide"><img src="assets/img/02_03_rural-cabins_1.png" alt="الأكواخ الريفية" loading="lazy"><span class="activity-slide-caption">الأكواخ الريفية</span></div>
+      <div class="activity-slide"><img src="assets/img/02_04_helicopter_1.png" alt="الهليكوبتر" loading="lazy"><span class="activity-slide-caption">الهليكوبتر</span></div>
+      <div class="activity-slide"><img src="assets/img/02_05_hot-air-balloon.png" alt="المنطاد" loading="lazy"><span class="activity-slide-caption">المنطاد</span></div>
+      <div class="activity-slide"><img src="assets/img/02_06_russian-camp.png" alt="المعسكر الروسي" loading="lazy"><span class="activity-slide-caption">المعسكر الروسي</span></div>
+      <div class="activity-slide"><img src="assets/img/02_08_horse-riding.png" alt="ركوب الخيل" loading="lazy"><span class="activity-slide-caption">ركوب الخيل</span></div>
+      <div class="activity-slide"><img src="assets/img/02_09_drift.png" alt="الدريفت" loading="lazy"><span class="activity-slide-caption">الدريفت</span></div>
+      <div class="activity-slide"><img src="assets/img/02_10_cruise.png" alt="الكروز" loading="lazy"><span class="activity-slide-caption">الكروز</span></div>
+      <div class="activity-slide"><img src="assets/img/02_11_circus.png" alt="السيرك" loading="lazy"><span class="activity-slide-caption">السيرك</span></div>
+      <div class="activity-slide"><img src="assets/img/02_12_cable-car.png" alt="التلفريك" loading="lazy"><span class="activity-slide-caption">التلفريك</span></div>
+      <div class="activity-slide"><img src="assets/img/02_13_ballet.png" alt="عروض الباليه" loading="lazy"><span class="activity-slide-caption">عروض الباليه</span></div>
+      <div class="activity-slide"><img src="assets/img/02_14_zipline.png" alt="الزيبلاين" loading="lazy"><span class="activity-slide-caption">الزيبلاين</span></div>
+      <div class="activity-slide"><img src="assets/img/02_15_tv-tower.png" alt="برج التلفزيون" loading="lazy"><span class="activity-slide-caption">برج التلفزيون</span></div>
+      <div class="activity-slide"><img src="assets/img/02_16_dolphin-show.png" alt="عرض الدلافين" loading="lazy"><span class="activity-slide-caption">عرض الدلافين</span></div>
+      <div class="activity-slide"><img src="assets/img/02_17_slide.png" alt="الزحليقة" loading="lazy"><span class="activity-slide-caption">الزحليقة</span></div>
+      <div class="activity-slide"><img src="assets/img/02_18_giant-penguin.png" alt="البقي العملاق" loading="lazy"><span class="activity-slide-caption">البقي العملاق</span></div>
+      <div class="activity-slide"><img src="assets/img/02_19_moscow-eye.png" alt="عين موسكو" loading="lazy"><span class="activity-slide-caption">عين موسكو</span></div>
+
+    </div>
+
+    <button class="slider-arrow slider-arrow--next" id="sliderNext" aria-label="النشاط التالي">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg>
+    </button>
+
+  </div>
+
+  <div class="container">
+    <div class="slider-counter"><span id="sliderCurrent">01</span> / <span id="sliderTotal">18</span></div>
+  </div>
+</section>
+
+<!-- ============================================================
+     الفنادق — تُبنى بطاقاتها ديناميكيًا من مصفوفة hotels في script.js
+     (ابحث عن "const hotels" في script.js لتعديل أي فندق بسهولة: الاسم،
+     المدينة، الوصف، أو مسار الصورة، دون لمس HTML إطلاقًا).
+     ============================================================ -->
+<section class="hotels" id="hotels">
+  <div class="container">
+    <div class="section-head">
+      <div class="intro-tag">الإقامة</div>
+      <h2 class="section-title section-title--display">أين ستقيم<br>في رحلتك؟</h2>
+      <p class="intro-text">مجموعة مختارة من الفنادق في موسكو وسانت بطرسبرغ. اضغط "اطلب الحجز" وسنساعدك في ترتيب التفاصيل.</p>
+    </div>
+
+    <div class="hotels-filter" id="hotelsFilter" role="group" aria-label="تصفية الفنادق حسب المدينة">
+      <button class="hotels-filter-btn is-active" data-city="all">الكل</button>
+      <button class="hotels-filter-btn" data-city="Moscow">موسكو</button>
+      <button class="hotels-filter-btn" data-city="Saint Petersburg">سانت بطرسبرغ</button>
+    </div>
+
+    <!-- تُملأ تلقائيًا عبر JavaScript من مصفوفة hotels -->
+    <div class="hotels-grid" id="hotelsGrid">
+      <noscript>
+        <p class="hotels-noscript">لعرض قائمة الفنادق الكاملة، فعّل JavaScript في المتصفح، أو
+          <a href="https://wa.me/79659262292?text=مرحبًا،%20أرغب%20في%20الاستفسار%20عن%20الفنادق%20المتاحة.">تواصل معنا مباشرة عبر واتساب</a>.</p>
+      </noscript>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     النقل — Panels كبيرة أفقية بدل Cards صغيرة
+     ============================================================ -->
+<section class="transport" id="transport">
+  <div class="container">
+    <div class="section-head">
+      <div class="intro-tag">التنقل أثناء رحلتك</div>
+      <h2 class="section-title section-title--display">تنقل مريح<br>أثناء رحلتك</h2>
+    </div>
+
+    <div class="transport-panels">
+
+      <div class="transport-panel">
+        <div class="transport-panel-media">
+          <img src="assets/img/01_01_mercedes-m_klass.png" alt="Mercedes M Klass" loading="lazy">
+        </div>
+        <div class="transport-panel-info">
+          <span class="transport-panel-index">01</span>
+          <h3>Mercedes M Klass</h3>
+        </div>
+      </div>
+
+      <div class="transport-panel transport-panel--reverse">
+        <div class="transport-panel-media">
+          <img src="assets/img/01_02_mercedes-sprinter.png" alt="Mercedes-Benz Sprinter" loading="lazy">
+        </div>
+        <div class="transport-panel-info">
+          <span class="transport-panel-index">02</span>
+          <h3>Mercedes-Benz Sprinter</h3>
+        </div>
+      </div>
+
+      <div class="transport-panel">
+        <div class="transport-panel-media">
+          <img src="assets/img/01_03_mercedes-viano.png" alt="Mercedes Viano Minivan" loading="lazy">
+        </div>
+        <div class="transport-panel-info">
+          <span class="transport-panel-index">03</span>
+          <h3>Mercedes Viano Minivan</h3>
+        </div>
+      </div>
+
+      <div class="transport-panel transport-panel--reverse">
+        <div class="transport-panel-media">
+          <img src="assets/img/01_04_mercedes-maybach.png" alt="Mercedes Maybach" loading="lazy">
+        </div>
+        <div class="transport-panel-info">
+          <span class="transport-panel-index">04</span>
+          <h3>Mercedes Maybach</h3>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section-cta">
+      <a href="https://wa.me/79659262292?text=مرحبًا،%20أرغب%20في%20حجز%20سيارة%20لرحلتي." class="btn btn-outline">احجز سيارتك</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     البرامج والباقات
+     ============================================================ -->
+<section class="packages" id="packages">
+  <div class="container">
+    <div class="section-head">
+      <div class="intro-tag">برامجنا</div>
+      <h2 class="section-title section-title--display">برامج وباقات<br>تُبنى حسب رحلتك</h2>
+      <p class="section-note">العناوين أدناه مؤقتة وقابلة للتعديل عند توفر تفاصيل الباقات النهائية.</p>
+    </div>
+
+    <div class="packages-grid">
+
+      <div class="package-card">
+        <span class="package-index">01</span>
+        <h3>برنامج روسيا الشامل</h3>
+        <p>برنامج عام يغطي أبرز الوجهات في روسيا، قابل للتخصيص حسب مدة الرحلة.</p>
+        <a href="https://wa.me/79659262292?text=مرحبًا،%20أرغب%20في%20الاستفسار%20عن%20برنامج%20روسيا%20الشامل." class="package-link">اطلب تفاصيل الباقة</a>
+      </div>
+
+      <div class="package-card">
+        <span class="package-index">02</span>
+        <h3>تجربة روسيا للعائلات</h3>
+        <p>أنشطة وإقامة تناسب الرحلات العائلية بمختلف الأعمار.</p>
+        <a href="https://wa.me/79659262292?text=مرحبًا،%20أرغب%20في%20الاستفسار%20عن%20تجربة%20روسيا%20للعائلات." class="package-link">اطلب تفاصيل الباقة</a>
+      </div>
+
+      <div class="package-card">
+        <span class="package-index">03</span>
+        <h3>تجربة روسيا للأصدقاء</h3>
+        <p>برنامج يجمع بين المغامرة والفعاليات لمجموعات الأصدقاء.</p>
+        <a href="https://wa.me/79659262292?text=مرحبًا،%20أرغب%20في%20الاستفسار%20عن%20تجربة%20روسيا%20للأصدقاء." class="package-link">اطلب تفاصيل الباقة</a>
+      </div>
+
+      <div class="package-card">
+        <span class="package-index">04</span>
+        <h3>رحلة روسيا حسب الطلب</h3>
+        <p>نبني لك برنامجًا خاصًا بالكامل حسب رغبتك وموعد رحلتك.</p>
+        <a href="https://wa.me/79659262292?text=مرحبًا،%20أرغب%20في%20طلب%20برنامج%20رحلة%20حسب%20الطلب." class="package-link">اطلب تفاصيل الباقة</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     كيف تبدأ رحلتك؟
+     ============================================================ -->
+<section class="steps" id="how-it-works">
+  <div class="container">
+    <div class="section-head">
+      <div class="intro-tag">ابدأ الآن</div>
+      <h2 class="section-title section-title--display">كيف تبدأ رحلتك؟</h2>
+    </div>
+
+    <ol class="steps-list">
+      <li class="step-item">
+        <span class="step-num">1</span>
+        <div><h3>تواصل معنا</h3><p>راسلنا عبر واتساب لتبدأ الحديث عن رحلتك.</p></div>
+      </li>
+      <li class="step-item">
+        <span class="step-num">2</span>
+        <div><h3>أخبرنا بتفاصيل رحلتك</h3><p>شاركنا مواعيدك وعدد المسافرين وما تفضله من أنشطة.</p></div>
+      </li>
+      <li class="step-item">
+        <span class="step-num">3</span>
+        <div><h3>نساعدك في ترتيب الخيارات</h3><p>نقترح عليك خيارات الإقامة والنقل والأنشطة المناسبة.</p></div>
+      </li>
+      <li class="step-item">
+        <span class="step-num">4</span>
+        <div><h3>ابدأ رحلتك إلى روسيا</h3><p>نرافقك بالتفاصيل حتى تصل وتبدأ تجربتك في روسيا.</p></div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!--
+  قسم "آراء العملاء" أُزيل بناءً على طلبك (لا تقييمات/أسماء/صور وهمية حاليًا).
+  عند توفر مراجعات حقيقية (Screenshots من واتساب مثلًا)، يمكن إعادة بناء القسم هنا بسهولة.
+-->
+
+<!-- ============================================================
+     الأسئلة الشائعة
+     ============================================================ -->
+<section class="faq" id="faq">
+  <div class="container faq-container">
+    <div class="section-head">
+      <div class="intro-tag">أسئلة شائعة</div>
+      <h2 class="section-title section-title--display">لديك سؤال؟</h2>
+    </div>
+
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>ما المدن التي يمكنني زيارتها؟</summary>
+        <p>نركز حاليًا على موسكو وسانت بطرسبرغ، مع إمكانية إضافة وجهات أخرى في روسيا ضمن برنامجك.</p>
+      </details>
+      <details class="faq-item">
+        <summary>هل تساعدون في إجراءات التأشيرة السياحية؟</summary>
+        <p>نعم، نساعدك في ترتيب متطلبات التأشيرة السياحية. للتفاصيل الدقيقة المتعلقة بحالتك يُفضّل التواصل معنا مباشرة عبر واتساب.</p>
+      </details>
+      <details class="faq-item">
+        <summary>هل يمكنكم ترتيب الفندق والتنقل؟</summary>
+        <p>نعم، نساعدك في اختيار الفندق المناسب في موسكو أو سانت بطرسبرغ، وترتيب وسيلة التنقل خلال رحلتك.</p>
+      </details>
+      <details class="faq-item">
+        <summary>هل يمكن تخصيص الرحلة حسب رغبتي؟</summary>
+        <p>نعم، يمكن بناء برنامج رحلة حسب الطلب يناسب عدد المسافرين والمدة والوجهات التي تفضلها.</p>
+      </details>
+      <details class="faq-item">
+        <summary>ما الذي تشمله الباقات؟</summary>
+        <p>تختلف تفاصيل كل باقة حسب احتياجك، ويمكنك معرفة ما تشمله بالتحديد بعد التواصل معنا عبر واتساب.</p>
+      </details>
+      <details class="faq-item">
+        <summary>كيف أطلب حجزًا أو أتواصل معكم؟</summary>
+        <p>يمكنك التواصل معنا مباشرة عبر واتساب من خلال الأزرار الموجودة في الموقع، وسنرد عليك بالتفاصيل.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FINAL SCENE — المشهد الأخير قبل الفوتر
+     صورة كبيرة (الكروز - تُظهر أفق موسكو من أصولك) + Overlay + دخول سينمائي
+     ============================================================ -->
+<section class="final-scene" id="finalScene">
+  <div class="final-scene-media">
+    <img src="assets/img/02_10_cruise.png" alt="أفق موسكو" loading="lazy">
+  </div>
+  <div class="final-scene-overlay"></div>
+  <div class="container final-scene-content">
+    <h2 class="final-scene-title">رحلتك إلى روسيا<br>على بُعد رسالة واحدة</h2>
+    <p class="final-scene-text">تواصل معنا الآن، ودع تفاصيل الرحلة علينا.</p>
+    <a href="https://wa.me/79659262292?text=مرحبًا،%20أرغب%20في%20الاستفسار%20عن%20رحلة%20إلى%20روسيا." class="btn btn-primary btn-lg">خطط لرحلتك إلى روسيا</a>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER — بسيط وفخم
+     ============================================================ -->
+<footer class="footer">
+  <div class="container footer-inner">
+
+    <div class="footer-brand">
+      <img src="assets/img/IMG_20260531_112105_748.png" alt="شهاب" class="footer-logo">
+    </div>
+
+    <nav class="footer-links">
+      <a href="#about">من نحن</a>
+      <a href="#destinations">الوجهات</a>
+      <a href="#hotels">الفنادق</a>
+      <a href="#transport">النقل</a>
+      <a href="#packages">الباقات</a>
+      <a href="#faq">الأسئلة الشائعة</a>
+    </nav>
+
+    <div class="footer-social">
+      <a href="https://wa.me/79659262292" aria-label="واتساب" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 00-8.6 15L2 22l5.2-1.4A10 10 0 1012 2z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+      </a>
+      <a href="https://www.instagram.com/shehab_moscow?stkn=dm1ycDNzOXhwMXhy" aria-label="إنستقرام" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+      </a>
+      <!-- PLACEHOLDER: لا يوجد رابط TikTok مؤكد، ضع الرابط الفعلي هنا -->
+      <a href="https://www.tiktok.com/@shehab.moscow?_r=1&_t=ZS-9AFQWBgqEoK" aria-label="تيك توك" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M14 3v11a3 3 0 11-3-3" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M14 3c0 2.5 2 4.5 4.5 4.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+      </a>
+      <a href="https://snapchat.com/add/shehab_moscow" aria-label="سناب شات" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M12 3c3 0 5 2.2 5 5v2c1 .3 2 1 2 2s-1.5 1.8-2.5 2c.5 1.3 2 2 3.5 2.3-.2 1-1 1.4-2 1.6-.2.7-.7 1-1.5 1-1 0-1.3.6-2.5.6s-1.5-.6-2-.6-1 .6-2 .6-1.5-.6-2.5-.6c-.8 0-1.3-.3-1.5-1-1-.2-1.8-.6-2-1.6 1.5-.3 3-1 3.5-2.3C6.5 14.8 5 14 5 13s1-1.7 2-2V9c0-2.8 2-6 5-6z" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>
+      </a>
+      <!-- PLACEHOLDER: لا يوجد رابط تيليجرام مؤكد، ضع الرابط الفعلي هنا -->
+    
+    </div>
+
+    <p class="footer-copy">© <span id="year"></span> شهاب — السياحة والسفر إلى روسيا</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
